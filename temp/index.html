@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .time-table .day {
+            display: flex;
+        }
+
+        .time-table .day::before {
+            content: attr(data-day-title);
+            display: block;
+            width: 100px;
+        }
+
+        .time-table .hour.hour-start,
+        .time-table .hour.hour-end {
+            width: 15px;
+            margin-top: 1px;
+            height: 30px;   
+        }
+
+        .time-table .hour.hour-end {
+            margin-right: 1px;
+        }
+
+        .time-table .free {
+            background-color: gray;
+        }
+
+        .time-table .booked {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="booking">
+        <label for="">
+            <input type="text" name="start" value="11">
+        </label>
+        <span>–</span>
+        <label for="">
+            <input type="text" name="end" value="16">
+        </label>
+        <button type="submit">submit</button>
+    </form>
+    <div id="time-table" class="time-table">
+
+    </div>
+    <button id="mark-range">mark range</button>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- @@include('_header.html') -->
+    <main class="main">
+        <div class="timetable">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline__item timeline__item--blue">
+                        <div class="timeline__title">
+                            Тип предприятия
+                        </div>
+                        1
+                    </div>
+                    <div class="timeline__item timeline__item--blue timeline__item--gradient">
+                        <div class="timeline__title">
+                            Категории
+                        </div>
+                        2
+                    </div>
+                    <div class="timeline__item timeline__item--red">
+                        <div class="timeline__title">
+                            График работы
+                        </div>
+                        3
+                    </div>
+                    <div class="timeline__item timeline__item--grey">
+                        <div class="timeline__title">
+                            Оборот и нагрузка
+                        </div>
+                        4
+                    </div>
+                    <div class="timeline__item timeline__item--grey">
+                        <div class="timeline__title">
+                            Должности
+                        </div>
+                        5
+                    </div>
+                    <div class="timeline__item timeline__item--grey">
+                        <div class="timeline__title">
+                            Тип нагрузки
+                        </div>
+                        6
+                    </div>
+                </div>
+                <div class="timetable__main">
+                    <div class="timetable__title">
+                        График работы предприятия
+                    </div>
+                    <div class="timetable__time">
+                        <div class="timetable__text">
+                            Задать интервал таблицы
+                        </div>
+
+                        <form class="form" action="" id="booking">
+                            <label for="">
+                                <input type="text" name="start" placeholder="00:00">
+                            </label>
+                            <span>&ndash;</span>
+                            <label for="">
+                                <input type="text" name="end" placeholder="00:00">
+                            </label>
+                            <button class="mark submit" type="submit">
+                                Подтвердить
+                                <img class="hour" src="./img/hour.svg" alt="">
+                            </button>
+                                
+                        </form>
+
+                        
+                    </div>
+                    <div class="graphic">
+                        <div id="time-table" class="time-table">
+                        
+                        </div>
+                        <div class="buttons">
+                            <button class="mark" id="mark-range">
+                                <img src="./img/ok.svg" alt="">
+                                Заполнить автоматически</button>
+
+                            <button class="mark" id="clear-range">
+                                <img src="./img/clear.svg" alt="">
+                                Очистить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="next">
+                    <button class="next__btn">
+                        Назад
+                    </button>
+                    <button class="next__btn next__btn--blue">
+                        Далее
+                    </button>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container__footer">
+                    <div class="footer__left">
+                        <img class="footer__lookin" src="./img/lookin.svg" alt="">
+                        © Lookin, 2020
+                    </div>
+                    <div class="footer__right">
+                        <img class="footer__sup" src="./img/support.svg" alt="">
+                        <a class="footer__link" href="">
+                        Техническая поддержка
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
